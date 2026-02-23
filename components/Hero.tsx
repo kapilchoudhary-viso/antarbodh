@@ -46,10 +46,10 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
         {/* Struggle cards floating below - Themed Gradients */}
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-6xl mx-auto">
           {[
-            { text: "Overcome Anxiety", icon: "😌", bg: "from-sky-50 to-blue-50/50 border-sky-100" },
-            { text: "Manage Burnout", icon: "🔋", bg: "from-amber-50 to-orange-50/50 border-amber-100" },
-            { text: "Defeat Self-Doubt", icon: "🛡️", bg: "from-indigo-50 to-violet-50/50 border-indigo-100" },
-            { text: "Stop Comparing", icon: "🌟", bg: "from-emerald-50 to-teal-50/50 border-emerald-100" }
+            { text: "Overcome Anxiety", icon: "🧘", bg: "from-sky-50 to-blue-50/50 border-sky-100" },
+            { text: "Manage Burnout", icon: "🌱", bg: "from-amber-50 to-orange-50/50 border-amber-100" },
+            { text: "Defeat Self-Doubt", icon: "💪", bg: "from-indigo-50 to-violet-50/50 border-indigo-100" },
+            { text: "Stop Comparing", icon: "🌻", bg: "from-emerald-50 to-teal-50/50 border-emerald-100" }
           ].map((item, index) => (
             <div key={index} className={`bg-gradient-to-br ${item.bg} backdrop-blur-md p-6 rounded-3xl shadow-sm border flex flex-col items-center text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-500 group relative overflow-hidden`}>
               <div className="absolute top-0 right-0 w-20 h-20 bg-white/40 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
