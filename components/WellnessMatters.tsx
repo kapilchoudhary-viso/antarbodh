@@ -8,7 +8,7 @@ const WellnessMatters: React.FC = () => {
       <div className="absolute top-0 left-0 right-0 h-14 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
       <div className="absolute bottom-0 left-0 right-0 h-14 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
 
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 scroll-reveal">
 
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
           <div className="lg:w-1/2 pt-4">
@@ -26,7 +26,7 @@ const WellnessMatters: React.FC = () => {
                 { text: "Respond calmly under pressure",       Icon: Waves,      accent: "bg-amber-400",   bg: "bg-white hover:bg-amber-50/50" },
                 { text: "Sustain momentum over months",        Icon: TrendingUp, accent: "bg-purple-400",  bg: "bg-white hover:bg-purple-50/50" }
               ].map((item, i) => (
-                <div key={i} className={`flex items-center gap-4 p-5 ${item.bg} rounded-xl shadow-sm border border-gray-100 transition-all duration-200 hover:shadow-md hover:-translate-x-1`}>
+                <div key={i} className={`flex items-center gap-4 p-5 ${item.bg} rounded-xl shadow-sm border border-gray-100 transition-all duration-200 hover:shadow-md hover:-translate-x-1 stagger-item`}>
                   <div className={`flex-shrink-0 w-1.5 h-10 ${item.accent} rounded-full`}></div>
                   <item.Icon size={18} className="text-slate-400 flex-shrink-0" />
                   <span className="text-slate-800 font-medium leading-snug">{item.text}</span>
@@ -63,7 +63,7 @@ const WellnessMatters: React.FC = () => {
                     bg: "bg-rose-50/80 border-rose-100"
                   }
                 ].map((item, idx) => (
-                  <div key={idx} className={`flex gap-6 p-4 rounded-2xl border ${item.bg} hover:scale-[1.02] transition-transform duration-300 shadow-sm`}>
+                  <div key={idx} className={`flex gap-6 p-4 rounded-2xl border ${item.bg} hover:scale-[1.02] transition-transform duration-300 shadow-sm stagger-item`}>
                     <div className="flex-shrink-0 w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm">
                       {item.icon}
                     </div>

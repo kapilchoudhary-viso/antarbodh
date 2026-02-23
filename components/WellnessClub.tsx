@@ -56,7 +56,7 @@ const WellnessClub: React.FC = () => {
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-amber-100/40 rounded-full blur-[100px] -translate-x-1/3 translate-y-1/3"></div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10 scroll-reveal">
         <div className="text-center mb-10">
           <span className="text-brand-accent font-bold tracking-widest uppercase text-xs mb-3 block">VisionCare Community</span>
           <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 text-brand-dark">Student Wellness Club</h2>
@@ -70,7 +70,7 @@ const WellnessClub: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {activities.map((activity, idx) => (
-            <div key={idx} className={`bg-white border border-gray-100 border-t-2 ${activity.topBorder} p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group`}>
+            <div key={idx} className={`bg-white border border-gray-100 border-t-2 ${activity.topBorder} p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group stagger-item`}>
               <div className={`w-11 h-11 ${activity.iconBg} rounded-xl flex items-center justify-center ${activity.iconColor} mb-5 shadow-sm`}>
                 {activity.icon}
               </div>
@@ -80,7 +80,7 @@ const WellnessClub: React.FC = () => {
           ))}
 
           {/* Key Values Card */}
-          <div className="bg-gradient-to-br from-slate-800 to-brand-dark border border-gray-700 p-8 rounded-3xl flex flex-col justify-center items-center text-center shadow-xl relative overflow-hidden text-white">
+          <div className="bg-gradient-to-br from-slate-800 to-brand-dark border border-gray-700 p-8 rounded-3xl flex flex-col justify-center items-center text-center shadow-xl relative overflow-hidden text-white stagger-item">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-accent via-brand-secondary to-brand-accent"></div>
 

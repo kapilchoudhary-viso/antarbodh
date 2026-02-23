@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useScrollAnimation from './hooks/useScrollAnimation';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import AboutVisionCare from './components/AboutVisionCare';
@@ -12,6 +13,7 @@ import ContactModal from './components/ContactModal';
 
 const App: React.FC = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
+  useScrollAnimation();
 
   const openContact = () => {
     setIsContactOpen(true);

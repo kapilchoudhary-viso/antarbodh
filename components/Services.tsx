@@ -4,7 +4,7 @@ import { Brain, UserCheck, Calendar, ClipboardList } from 'lucide-react';
 const Services: React.FC = () => {
   return (
     <section id="services" className="py-14 md:py-20 bg-white scroll-mt-20">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 scroll-reveal">
 
         {/* Journey Section */}
         <div className="bg-gradient-to-b from-slate-50 to-white rounded-[3rem] p-8 md:p-16 shadow-soft border border-gray-100 relative overflow-hidden">
@@ -65,7 +65,7 @@ const Services: React.FC = () => {
                 accentBar: "bg-rose-500"
               }
             ].map((step, idx) => (
-              <div key={idx} className="group relative flex flex-col items-center text-center">
+              <div key={idx} className="group relative flex flex-col items-center text-center stagger-item">
                 {/* Icon circle with step badge */}
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-4 shadow-md border-2 border-gray-100 relative z-10 group-hover:scale-110 transition-all duration-300">
                   <div className={`${step.iconBg} w-14 h-14 rounded-full flex items-center justify-center`}>

@@ -34,7 +34,7 @@ const WhyJoin: React.FC<WhyJoinProps> = ({ onOpenContact }) => {
       {/* Smooth section transitions */}
       <div className="absolute top-0 left-0 right-0 h-14 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
       <div className="absolute bottom-0 left-0 right-0 h-14 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 scroll-reveal">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           
           <div className="lg:w-1/2">
@@ -44,7 +44,7 @@ const WhyJoin: React.FC<WhyJoinProps> = ({ onOpenContact }) => {
             
             <div className="space-y-4">
               {benefits.map((item, idx) => (
-                <div key={idx} className={`flex gap-5 p-5 rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md hover:-translate-x-1 ${item.bg}`}>
+                <div key={idx} className={`flex gap-5 p-5 rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md hover:-translate-x-1 stagger-item ${item.bg}`}>
                   <div className="mt-1 flex-shrink-0 text-brand-secondary">
                     <CheckCircle2 size={24} />
                   </div>

@@ -4,7 +4,7 @@ import { Compass, Heart, Sparkles } from 'lucide-react';
 const AboutVisionCare: React.FC = () => {
   return (
     <section id="about" className="py-14 md:py-20 bg-white relative overflow-hidden scroll-mt-20">
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10 scroll-reveal">
         <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-24">
           
           <div className="md:w-1/2">
@@ -36,7 +36,7 @@ const AboutVisionCare: React.FC = () => {
                             { icon: Heart, color: "text-rose-500", bg: "bg-rose-50", title: "Empathetic Care", desc: "A judgment-free zone to voice fears and find inner strength." },
                             { icon: Sparkles, color: "text-amber-500", bg: "bg-amber-50", title: "Potential Unlocked", desc: "Removing mental blocks to help you perform at your peak." }
                         ].map((item, idx) => (
-                            <div key={idx} className="flex gap-5 items-start group/item">
+                            <div key={idx} className="flex gap-5 items-start group/item stagger-item">
                                 <div className={`flex-shrink-0 w-14 h-14 ${item.bg} ${item.color} rounded-2xl flex items-center justify-center shadow-sm transition-transform duration-300 group-hover/item:scale-110`}>
                                     <item.icon size={26} />
                                 </div>

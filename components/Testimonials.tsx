@@ -4,7 +4,7 @@ import { Quote } from 'lucide-react';
 const Testimonials: React.FC = () => {
   return (
     <section className="py-14 md:py-20 bg-white">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 scroll-reveal">
         <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-dark">Voices of Resilience</h2>
           <div className="w-16 h-1 bg-brand-accent mx-auto mt-5 rounded-full"></div>
@@ -27,7 +27,7 @@ const Testimonials: React.FC = () => {
                   avatarColor: "bg-brand-accent"
               }
           ].map((testimonial, idx) => (
-            <div key={idx} className="bg-white border border-gray-100 p-10 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 group relative">
+            <div key={idx} className="bg-white border border-gray-100 p-10 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 group relative stagger-item">
                 <div className={`w-1 h-12 ${testimonial.accentBar} rounded-full absolute left-0 top-10`}></div>
                 <Quote size={32} className={`${testimonial.accentColor} opacity-20 mb-6`} />
                 <p className="text-slate-700 text-xl font-stylish italic mb-8 leading-relaxed">
