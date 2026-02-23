@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, MessageCircle, UserCheck, Lock } from 'lucide-react';
+import { Lightbulb, Target, Waves, TrendingUp, MessageCircle, UserCheck, Lock } from 'lucide-react';
 
 const WellnessMatters: React.FC = () => {
   return (
@@ -20,14 +20,14 @@ const WellnessMatters: React.FC = () => {
 
             <div className="flex flex-col gap-3">
               {[
-                { text: "Retain and recall more effectively",    accent: "bg-emerald-400", bg: "bg-white hover:bg-emerald-50/50" },
-                { text: "Perform consistently in assessments",  accent: "bg-blue-400",    bg: "bg-white hover:bg-blue-50/50" },
-                { text: "Respond calmly under pressure",        accent: "bg-amber-400",   bg: "bg-white hover:bg-amber-50/50" },
-                { text: "Sustain momentum over months",         accent: "bg-purple-400",  bg: "bg-white hover:bg-purple-50/50" }
+                { text: "Retain and recall more effectively",   Icon: Lightbulb,  accent: "bg-emerald-400", bg: "bg-white hover:bg-emerald-50/50" },
+                { text: "Perform consistently in assessments", Icon: Target,     accent: "bg-blue-400",    bg: "bg-white hover:bg-blue-50/50" },
+                { text: "Respond calmly under pressure",       Icon: Waves,      accent: "bg-amber-400",   bg: "bg-white hover:bg-amber-50/50" },
+                { text: "Sustain momentum over months",        Icon: TrendingUp, accent: "bg-purple-400",  bg: "bg-white hover:bg-purple-50/50" }
               ].map((item, i) => (
                 <div key={i} className={`flex items-center gap-4 p-5 ${item.bg} rounded-xl shadow-sm border border-gray-100 transition-all duration-200 hover:shadow-md hover:-translate-x-1`}>
                   <div className={`flex-shrink-0 w-1.5 h-10 ${item.accent} rounded-full`}></div>
-                  <Brain size={18} className="text-slate-400 flex-shrink-0" />
+                  <item.Icon size={18} className="text-slate-400 flex-shrink-0" />
                   <span className="text-slate-800 font-medium leading-snug">{item.text}</span>
                 </div>
               ))}

@@ -25,18 +25,12 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             Your mental well-being is the foundation of sustained success. We help you build the <span className="font-semibold text-white">resilience</span>, <span className="font-semibold text-white">balance</span>, and <span className="font-semibold text-white">inner strength</span> needed for your journey.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
+          <div className="flex items-center justify-center">
             <button
               onClick={onOpenContact}
               className="w-full sm:w-auto px-10 py-4 bg-brand-primary text-white font-semibold rounded-full shadow-lg hover:bg-brand-secondary transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer"
             >
-              Join Wellness Club <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button
-              onClick={onOpenContact}
-              className="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-sm text-white border border-white/20 font-medium rounded-full hover:bg-white/20 transition-all duration-300 cursor-pointer"
-            >
-              Book a Session
+              Book a Session <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
         </div>
