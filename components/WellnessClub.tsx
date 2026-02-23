@@ -5,43 +5,43 @@ const WellnessClub: React.FC = () => {
   const activities = [
     {
       icon: <Users size={22} />,
-      title: “Check-In Circles”,
-      desc: “A structured space to share weekly highs and lows without judgment.”,
-      topBorder: “border-t-blue-500”,
-      iconBg: “bg-blue-50”,
-      iconColor: “text-blue-600”
+      title: "Check-In Circles",
+      desc: "A structured space to share weekly highs and lows without judgment.",
+      topBorder: "border-t-blue-500",
+      iconBg: "bg-blue-50",
+      iconColor: "text-blue-600"
     },
     {
       icon: <Feather size={22} />,
-      title: “Guided Reflection”,
-      desc: “Thoughtfully designed prompts to process fear of failure and comparison.”,
-      topBorder: “border-t-violet-500”,
-      iconBg: “bg-violet-50”,
-      iconColor: “text-violet-600”
+      title: "Guided Reflection",
+      desc: "Thoughtfully designed prompts to process fear of failure and comparison.",
+      topBorder: "border-t-violet-500",
+      iconBg: "bg-violet-50",
+      iconColor: "text-violet-600"
     },
     {
       icon: <Flower size={22} />,
-      title: “Mindfulness & Grounding”,
-      desc: “Breathing and calming techniques for performance anxiety.”,
-      topBorder: “border-t-emerald-500”,
-      iconBg: “bg-emerald-50”,
-      iconColor: “text-emerald-600”
+      title: "Mindfulness & Grounding",
+      desc: "Breathing and calming techniques for performance anxiety.",
+      topBorder: "border-t-emerald-500",
+      iconBg: "bg-emerald-50",
+      iconColor: "text-emerald-600"
     },
     {
       icon: <RefreshCw size={22} />,
-      title: “Cognitive Reframing”,
-      desc: “Learn to challenge perfectionism and “falling behind” narratives.”,
-      topBorder: “border-t-amber-500”,
-      iconBg: “bg-amber-50”,
-      iconColor: “text-amber-600”
+      title: "Cognitive Reframing",
+      desc: 'Learn to challenge perfectionism and "falling behind" narratives.',
+      topBorder: "border-t-amber-500",
+      iconBg: "bg-amber-50",
+      iconColor: "text-amber-600"
     },
     {
       icon: <BatteryCharging size={22} />,
-      title: “Energy & Focus Resets”,
-      desc: “Practical tools to rebuild consistency and mental stamina.”,
-      topBorder: “border-t-rose-500”,
-      iconBg: “bg-rose-50”,
-      iconColor: “text-rose-600”
+      title: "Energy & Focus Resets",
+      desc: "Practical tools to rebuild consistency and mental stamina.",
+      topBorder: "border-t-rose-500",
+      iconBg: "bg-rose-50",
+      iconColor: "text-rose-600"
     }
   ];
 
@@ -61,7 +61,7 @@ const WellnessClub: React.FC = () => {
             "Strength in Community"
           </p>
           <p className="mt-6 text-slate-700 max-w-3xl mx-auto text-lg font-light leading-relaxed">
-            The Student Wellness Club is a weekly, guided group experience where individuals come together to reflect, share, and build resilience. Because sometimes the most powerful breakthrough comes from realising: <span className="text-brand-primary font-semibold border-b border-brand-accent/50 pb-0.5">“I’m not alone in this.”</span>
+            The Student Wellness Club is a weekly, guided group experience where individuals come together to reflect, share, and build resilience. Because sometimes the most powerful breakthrough comes from realising: <span className="text-brand-primary font-semibold border-b border-brand-accent/50 pb-0.5">"I'm not alone in this."</span>
           </p>
         </div>
 
