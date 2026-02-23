@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, ShieldCheck, UserCheck, Lock } from 'lucide-react';
+import { Brain, MessageCircle, UserCheck, Lock } from 'lucide-react';
 
 const WellnessMatters: React.FC = () => {
   return (
@@ -56,7 +56,7 @@ const WellnessMatters: React.FC = () => {
                     bg: "bg-emerald-50/80 border-emerald-100"
                   },
                   {
-                    icon: <ShieldCheck className="text-rose-600" size={28} />,
+                    icon: <MessageCircle className="text-rose-600" size={28} />,
                     title: "One-on-One Counselling",
                     desc: "Confidential support for anxiety, burnout, motivation dips, and confidence loss.",
                     bg: "bg-rose-50/80 border-rose-100"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, UserCheck, Calendar, Activity } from 'lucide-react';
+import { Brain, UserCheck, Calendar, ClipboardList } from 'lucide-react';
 
 const Services: React.FC = () => {
   return (
@@ -25,7 +25,7 @@ const Services: React.FC = () => {
 
             {[
               {
-                icon: <Activity />,
+                icon: <ClipboardList />,
                 step: "01",
                 title: "Assessment",
                 desc: "Understanding your emotional state and stress levels.",

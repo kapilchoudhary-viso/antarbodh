@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Feather, RefreshCw, Zap, Flower } from 'lucide-react';
+import { Users, Feather, RefreshCw, BatteryCharging, Flower } from 'lucide-react';
 
 const WellnessClub: React.FC = () => {
   const activities = [
@@ -32,7 +32,7 @@ const WellnessClub: React.FC = () => {
       iconColor: "text-amber-600"
     },
     {
-      icon: <Zap size={24} />,
+      icon: <BatteryCharging size={24} />,
       title: "Energy & Focus Resets",
       desc: "Practical tools to rebuild consistency and mental stamina.",
       cardTheme: "bg-gradient-to-br from-rose-50 to-red-50 border-rose-100",

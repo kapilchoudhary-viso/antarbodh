@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Heart, Sparkles } from 'lucide-react';
+import { Compass, Heart, Sparkles } from 'lucide-react';
 
 const AboutVisionCare: React.FC = () => {
   return (
@@ -32,7 +32,7 @@ const AboutVisionCare: React.FC = () => {
                 <div className="bg-white relative rounded-[2rem] p-10 shadow-xl border border-gray-50 backdrop-blur-xl">
                     <div className="space-y-8">
                         {[
-                            { icon: Target, color: "text-blue-600", bg: "bg-blue-50", title: "Holistic Support", desc: "Addressing performance pressure, emotional health, and lifestyle balance." },
+                            { icon: Compass, color: "text-blue-600", bg: "bg-blue-50", title: "Holistic Support", desc: "Addressing performance pressure, emotional health, and lifestyle balance." },
                             { icon: Heart, color: "text-rose-500", bg: "bg-rose-50", title: "Empathetic Care", desc: "A judgment-free zone to voice fears and find inner strength." },
                             { icon: Sparkles, color: "text-amber-500", bg: "bg-amber-50", title: "Potential Unlocked", desc: "Removing mental blocks to help you perform at your peak." }
                         ].map((item, idx) => (
