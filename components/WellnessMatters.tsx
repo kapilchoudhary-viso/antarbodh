@@ -18,17 +18,16 @@ const WellnessMatters: React.FC = () => {
               A calm, steady mind is the engine of sustained preparation. At VisionCare, we recognise that success in any ambitious pursuit is not built by knowledge alone — it is built by mental clarity and emotional stability.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
+            <div className="flex flex-col gap-3">
               {[
-                { text: "Retain and recall more effectively", color: "border-l-4 border-l-emerald-400 bg-emerald-50/50" },
-                { text: "Perform consistently in assessments", color: "border-l-4 border-l-blue-400 bg-blue-50/50" },
-                { text: "Respond calmly under pressure", color: "border-l-4 border-l-amber-400 bg-amber-50/50" },
-                { text: "Sustain momentum over months", color: "border-l-4 border-l-purple-400 bg-purple-50/50" }
+                { text: "Retain and recall more effectively",    accent: "bg-emerald-400", bg: "bg-white hover:bg-emerald-50/50" },
+                { text: "Perform consistently in assessments",  accent: "bg-blue-400",    bg: "bg-white hover:bg-blue-50/50" },
+                { text: "Respond calmly under pressure",        accent: "bg-amber-400",   bg: "bg-white hover:bg-amber-50/50" },
+                { text: "Sustain momentum over months",         accent: "bg-purple-400",  bg: "bg-white hover:bg-purple-50/50" }
               ].map((item, i) => (
-                <div key={i} className={`flex items-start gap-4 p-5 bg-white rounded-xl shadow-sm border border-gray-100 ${item.color} hover:shadow-md transition-shadow`}>
-                  <div className="mt-0.5">
-                    <Brain size={20} className="text-slate-600" />
-                  </div>
+                <div key={i} className={`flex items-center gap-4 p-5 ${item.bg} rounded-xl shadow-sm border border-gray-100 transition-all duration-200 hover:shadow-md hover:-translate-x-1`}>
+                  <div className={`flex-shrink-0 w-1.5 h-10 ${item.accent} rounded-full`}></div>
+                  <Brain size={18} className="text-slate-400 flex-shrink-0" />
                   <span className="text-slate-800 font-medium leading-snug">{item.text}</span>
                 </div>
               ))}

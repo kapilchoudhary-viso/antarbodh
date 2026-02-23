@@ -39,15 +39,15 @@ const WhyJoin: React.FC<WhyJoinProps> = ({ onOpenContact }) => {
               Why Join the <br/><span className="text-brand-accent font-script text-6xl md:text-7xl">Club?</span>
             </h2>
             
-            <div className="space-y-6">
+            <div className="space-y-4">
               {benefits.map((item, idx) => (
-                <div key={idx} className={`flex gap-6 p-6 rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md hover:-translate-x-1 ${item.bg}`}>
+                <div key={idx} className={`flex gap-5 p-5 rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md hover:-translate-x-1 ${item.bg}`}>
                   <div className="mt-1 flex-shrink-0 text-brand-secondary">
-                    <CheckCircle2 size={28} />
+                    <CheckCircle2 size={24} />
                   </div>
                   <div>
-                    <h4 className="text-2xl font-stylish font-bold text-gray-900 mb-2">{item.title}</h4>
-                    <p className="text-slate-700 text-lg leading-relaxed">{item.desc}</p>
+                    <h4 className="text-xl font-stylish font-bold text-gray-900 mb-1">{item.title}</h4>
+                    <p className="text-slate-600 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}

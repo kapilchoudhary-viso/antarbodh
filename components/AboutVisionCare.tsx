@@ -8,8 +8,8 @@ const AboutVisionCare: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-24">
           
           <div className="md:w-1/2">
-            <div className="inline-block mb-4">
-              <span className="text-brand-accent font-bold tracking-widest uppercase text-xs border-b-2 border-brand-accent pb-1">Who We Are</span>
+            <div className="inline-flex items-center gap-2 bg-brand-primary/10 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-brand-primary font-bold tracking-widest uppercase text-xs">Who We Are</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-dark mb-8 leading-tight">
               About <span className="font-sans"><span className="text-red-600">Vision</span><span className="text-brand-primary">Care</span></span> <br/>
@@ -36,8 +36,8 @@ const AboutVisionCare: React.FC = () => {
                             { icon: Heart, color: "text-rose-500", bg: "bg-rose-50", title: "Empathetic Care", desc: "A judgment-free zone to voice fears and find inner strength." },
                             { icon: Sparkles, color: "text-amber-500", bg: "bg-amber-50", title: "Potential Unlocked", desc: "Removing mental blocks to help you perform at your peak." }
                         ].map((item, idx) => (
-                            <div key={idx} className="flex gap-5 items-start">
-                                <div className={`flex-shrink-0 w-14 h-14 ${item.bg} ${item.color} rounded-2xl flex items-center justify-center shadow-sm`}>
+                            <div key={idx} className="flex gap-5 items-start group/item">
+                                <div className={`flex-shrink-0 w-14 h-14 ${item.bg} ${item.color} rounded-2xl flex items-center justify-center shadow-sm transition-transform duration-300 group-hover/item:scale-110`}>
                                     <item.icon size={26} />
                                 </div>
                                 <div>

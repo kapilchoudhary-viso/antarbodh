@@ -16,8 +16,8 @@ const ContactFooter: React.FC = () => {
               Your overall well-being is the foundation of sustained success. A balanced mind helps you learn better, perform consistently, and face challenges with confidence.
             </p>
             <div className="flex items-center gap-3">
-              <div className="h-0.5 w-12 bg-brand-accent"></div>
-              <span className="text-white uppercase tracking-[0.2em] text-sm font-semibold">Nurturing Minds. Building Leaders.</span>
+              <div className="h-0.5 w-10 bg-brand-accent rounded-full"></div>
+              <span className="text-slate-300 uppercase tracking-[0.15em] text-xs font-semibold">Nurturing Minds. Building Leaders.</span>
             </div>
           </div>
 

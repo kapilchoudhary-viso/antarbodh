@@ -60,16 +60,16 @@ const WellnessClub: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {activities.map((activity, idx) => (
-            <div key={idx} className={`${activity.cardTheme} border p-5 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden`}>
+            <div key={idx} className={`${activity.cardTheme} border p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group relative overflow-hidden`}>
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/40 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
 
-              <div className={`w-14 h-14 bg-white rounded-2xl flex items-center justify-center ${activity.iconColor} mb-3 group-hover:scale-110 transition-transform duration-300 shadow-sm relative z-10 ring-1 ring-black/5`}>
+              <div className={`w-12 h-12 bg-white rounded-xl flex items-center justify-center ${activity.iconColor} mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm relative z-10 ring-1 ring-black/5`}>
                 {activity.icon}
               </div>
-              <h3 className="text-3xl font-stylish font-bold mb-1 text-brand-dark relative z-10">{activity.title}</h3>
-              <p className="text-slate-700 leading-relaxed relative z-10">{activity.desc}</p>
+              <h3 className="text-xl font-stylish font-bold mb-2 text-brand-dark relative z-10">{activity.title}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed relative z-10">{activity.desc}</p>
             </div>
           ))}
 
