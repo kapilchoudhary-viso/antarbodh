@@ -127,7 +127,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenContact }) => {
 
         {/* Bottom watermark */}
         <div className="px-5 pb-6 pt-4" style={{ borderTop: '1px solid rgba(30,58,138,0.07)' }}>
-          <p className="text-[10px] text-center" style={{ color: 'rgba(30,58,138,0.3)' }}>VisionCare · Antarbodh</p>
+          <p className="text-[10px] text-center font-semibold" style={{ color: '#1e3a8a' }}>VisionCare · Antarbodh</p>
         </div>
       </aside>
     </>
