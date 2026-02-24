@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Mail, Phone } from 'lucide-react';
+import { X, Mail, Phone, HeartHandshake } from 'lucide-react';
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -12,48 +12,57 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose}></div>
-      <div className="bg-white rounded-3xl p-8 max-w-md w-full relative z-10 shadow-2xl animate-in fade-in zoom-in duration-300">
-        <button 
-          onClick={onClose}
-          className="absolute top-4 right-4 p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
-        >
-          <X size={20} className="text-gray-600" />
-        </button>
-        
-        <div className="text-center mb-8">
-          <h3 className="text-3xl font-serif font-bold text-brand-dark mb-2">Get in Touch</h3>
-          <p className="text-slate-600">We are here to support your journey.</p>
-        </div>
 
-        <div className="space-y-4">
-          <div className="p-4 bg-brand-light rounded-2xl border border-blue-100 flex items-center gap-4 hover:shadow-md transition-shadow">
-            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-primary shadow-sm">
-              <Mail size={24} />
-            </div>
-            <div className="flex-1 overflow-hidden">
-              <p className="text-xs text-brand-secondary font-bold uppercase tracking-wider mb-0.5">Email Us</p>
-              <a href="mailto:student.wellness@visionias.in" className="text-slate-800 font-medium hover:text-brand-primary transition-colors block truncate">
-                student.wellness@visionias.in
-              </a>
-            </div>
-          </div>
+      <div className="relative z-10 w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl">
 
-          <div className="p-4 bg-brand-light rounded-2xl border border-blue-100 flex items-center gap-4 hover:shadow-md transition-shadow">
-            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-primary shadow-sm">
-              <Phone size={24} />
+        {/* ── Dark Header ── */}
+        <div className="relative overflow-hidden px-6 pt-6 pb-5 text-white" style={{ background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)' }}>
+          <div className="absolute top-0 right-0 w-32 h-32 rounded-full blur-[50px] opacity-30 pointer-events-none" style={{ background: '#1e3a8a', transform: 'translate(40%, -40%)' }}></div>
+
+          <button onClick={onClose} className="absolute top-3 right-3 p-1.5 rounded-full hover:bg-white/15 transition-colors cursor-pointer" aria-label="Close">
+            <X size={16} className="text-white/70" />
+          </button>
+
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)' }}>
+              <HeartHandshake size={20} style={{ color: '#d97706' }} />
             </div>
-            <div className="flex-1">
-              <p className="text-xs text-brand-secondary font-bold uppercase tracking-wider mb-0.5">Call Us</p>
-              <a href="tel:9311799223" className="text-slate-800 font-medium hover:text-brand-primary transition-colors block">
-                9311799223
-              </a>
+            <div>
+              <h3 className="text-lg font-serif font-bold text-white leading-tight">Begin Your Journey</h3>
+              <p className="text-slate-400 text-xs mt-0.5">We're here to support you.</p>
             </div>
           </div>
         </div>
-        
-        <div className="mt-8 text-center border-t border-gray-100 pt-6">
-            <p className="text-xs text-slate-400 font-medium uppercase tracking-wide">Available Mon-Sat, 10 AM - 6 PM</p>
+
+        {/* ── Contact Rows ── */}
+        <div className="bg-white px-5 py-4 space-y-2.5">
+          <a href="mailto:student.wellness@visionias.in"
+            className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all duration-200 group">
+            <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-200 group-hover:bg-brand-primary" style={{ background: 'rgba(30,58,138,0.08)', color: '#1e3a8a' }}>
+              <Mail size={16} />
+            </div>
+            <div>
+              <p className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Email</p>
+              <p className="text-slate-800 text-sm font-medium">student.wellness@visionias.in</p>
+            </div>
+          </a>
+
+          <a href="tel:9311799223"
+            className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-amber-200 hover:bg-amber-50/50 transition-all duration-200 group">
+            <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-200 group-hover:bg-brand-accent" style={{ background: 'rgba(217,119,6,0.08)', color: '#d97706' }}>
+              <Phone size={16} />
+            </div>
+            <div>
+              <p className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Phone</p>
+              <p className="text-slate-800 text-sm font-medium">9311799223</p>
+            </div>
+          </a>
+
+          <p className="text-center text-[11px] text-slate-400 pt-1 pb-1">
+            Mon–Sat &nbsp;·&nbsp; <span className="text-brand-primary font-semibold">10 AM – 6 PM</span>
+          </p>
         </div>
+
       </div>
     </div>
   );
