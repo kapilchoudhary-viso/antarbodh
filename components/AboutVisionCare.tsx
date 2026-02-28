@@ -12,7 +12,7 @@ const AboutVisionCare: React.FC = () => {
               <span className="text-brand-primary font-bold tracking-widest uppercase text-xs">Who We Are</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-dark mb-8 leading-tight">
-              About <span className="font-sans"><span className="text-red-600">Vision</span><span className="text-brand-primary">Care</span></span> <br/>
+              About <span className="font-sans"><span className="text-brand-primary">VisionCare</span><span className="text-red-600">Wellness</span></span> <br/>
               <span className="font-script text-brand-accent text-5xl md:text-6xl mt-2 block">(Antarbodh)</span>
             </h2>
             <p className="text-xl text-slate-700 mb-6 leading-relaxed font-normal">

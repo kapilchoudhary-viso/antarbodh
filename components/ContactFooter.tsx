@@ -9,7 +9,7 @@ const ContactFooter: React.FC = () => {
           
           <div className="md:w-1/2">
             <h2 className="text-4xl font-serif font-bold mb-6">
-              <span className="font-sans"><span className="text-red-500">Vision</span><span className="text-brand-secondary">Care</span></span> 
+              <span className="font-sans"><span className="text-brand-secondary">VisionCare</span><span className="text-red-500">Wellness</span></span>
               <span className="text-2xl font-script text-brand-accent ml-2 block sm:inline">(Antarbodh)</span>
             </h2>
             <p className="text-slate-300 text-xl mb-10 max-w-lg leading-relaxed font-light">
