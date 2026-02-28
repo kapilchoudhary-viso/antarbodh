@@ -16,7 +16,7 @@ const AboutVisionCare: React.FC = () => {
               <span className="font-script text-brand-accent text-5xl md:text-6xl mt-2 block">(Antarbodh)</span>
             </h2>
             <p className="text-xl text-slate-700 mb-6 leading-relaxed font-normal">
-              <span className="font-semibold text-brand-dark">VisionCare (Antarbodh)</span> is a dedicated wellness initiative by VisionIAS, designed to support the mental and emotional well-being of various aspirants and individuals.
+              <span className="font-semibold text-brand-dark">VisionCareWellness (Antarbodh)</span> is a dedicated wellness initiative by VisionIAS, designed to support the mental and emotional well-being of various aspirants and individuals.
             </p>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               We provide a safe, confidential space where you can address the unique psychological challenges of high-pressure environments, academic pursuits, and personal growth.

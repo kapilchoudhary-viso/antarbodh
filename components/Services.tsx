@@ -15,7 +15,7 @@ const Services: React.FC = () => {
             <span className="text-brand-accent font-script text-3xl block mb-2">Process</span>
             <h3 className="text-4xl md:text-5xl font-serif font-bold text-brand-dark mb-6">Your Wellness Journey</h3>
             <p className="text-xl text-slate-700 max-w-3xl mx-auto font-normal leading-relaxed">
-              VisionCare is not crisis intervention. It is <span className="font-semibold text-brand-primary">proactive preparation support</span> designed to help you build resilience and balance.
+              VisionCareWellness is not crisis intervention. It is <span className="font-semibold text-brand-primary">proactive preparation support</span> designed to help you build resilience and balance.
             </p>
           </div>
 

@@ -58,7 +58,7 @@ const WellnessClub: React.FC = () => {
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 scroll-reveal">
         <div className="text-center mb-10">
-          <span className="text-brand-accent font-bold tracking-widest uppercase text-xs mb-3 block">VisionCare Community</span>
+          <span className="text-brand-accent font-bold tracking-widest uppercase text-xs mb-3 block">VisionCareWellness Community</span>
           <h2 className="text-4xl md:text-6xl font-serif font-bold mb-4 text-brand-dark">Student Wellness Club</h2>
           <p className="text-2xl font-script text-brand-accent mb-3 transform -rotate-1">
             "Strength in Community"

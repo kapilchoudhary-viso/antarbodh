@@ -59,7 +59,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenContact }) => {
           <HeartHandshake className="text-brand-primary flex-shrink-0" size={32} />
           <div className="flex flex-col">
             <span className="text-[1.4rem] font-bold tracking-tight leading-none font-sans">
-              <span className="text-red-600">Vision</span><span className="text-brand-primary">Care</span>
+              <span className="text-brand-primary">VisionCare</span><span className="text-red-600">Wellness</span>
             </span>
             <span className="text-[1.1rem] font-script text-brand-accent leading-none mt-0.5">
               Antarbodh
@@ -127,7 +127,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenContact }) => {
 
         {/* Bottom watermark */}
         <div className="px-5 pb-6 pt-4" style={{ borderTop: '1px solid rgba(30,58,138,0.07)' }}>
-          <p className="text-[10px] text-center font-semibold" style={{ color: '#1e3a8a' }}>VisionCare · Antarbodh</p>
+          <p className="text-[10px] text-center font-semibold" style={{ color: '#1e3a8a' }}>VisionCareWellness · Antarbodh</p>
         </div>
       </aside>
     </>

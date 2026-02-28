@@ -16,7 +16,7 @@ const WellnessMatters: React.FC = () => {
               Why Mental Wellness <span className="text-brand-primary italic">Matters</span>
             </h2>
             <p className="text-xl text-slate-700 mb-6 leading-relaxed font-normal">
-              A calm, steady mind is the engine of sustained preparation. At VisionCare, we recognise that success in any ambitious pursuit is not built by knowledge alone — it is built by mental clarity and emotional stability.
+              A calm, steady mind is the engine of sustained preparation. At VisionCareWellness, we recognise that success in any ambitious pursuit is not built by knowledge alone — it is built by mental clarity and emotional stability.
             </p>
 
             <div className="flex flex-col gap-3">
